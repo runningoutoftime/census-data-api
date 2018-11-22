@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Import Tool</title>
+  </head>
+  <body>
+
+    <h1>Code-Based Statistical Area Import Tool</h1>
+    <%= form_tag('/import', multipart: true, remote: true)  do |form| %>
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+      <div id="zip_code_file_uploader" class="form_block">
+        <h4>Import ZIPCODE records</h4>
+        <p>Please upload a file with the following headers:</p>
+        <ul>
+          <li>ZIP</li>
+          <li>CBSA</li>
+          <li>RES_RATIO</li>
+          <li>BUS_RATIO</li>
+          <li>OTH_RATIO</li>
+          <li>TOT_RATIO</li>
+        </ul>
+        <input name="zip_code_file" type="file" accept=".csv" />
+      </div>
+      <div id="cbsa_file_uploaded" class="form_block">
+        <h4>Import CBSA records</h4>
+        <p>Please upload a file with the following headers:</p>
+        <ul>
+          <li>CBSA</li>
+          <li>MDIV</li>
+          <li>STCOU</li>
+          <li>NAME</li>
+          <li>LSAD</li>
+        </ul>
+        <p>Additonal fields such as POPESTIMATE2014 and POPESTIMATE2015 are accepted.</p>
+        <input name="cbsa_file" type="file" accept=".csv" />
+      </div>
+      <%= submit_tag "Submit" %>
+    <% end %>
+  </body>
+</html>

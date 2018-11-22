@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cbsa: MyString
+  mdiv: MyString
+  stcou: MyString
+  name: MyString
+  lsad: MyString
+
+two:
+  cbsa: MyString
+  mdiv: MyString
+  stcou: MyString
+  name: MyString
+  lsad: MyString

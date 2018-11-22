@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  zip: MyString
+  cbsa: MyString
+  res_ratio: 9.99
+  bus_ratio: 9.99
+  oth_ratio: 9.99
+  tot_ratio: 9.99
+
+two:
+  zip: MyString
+  cbsa: MyString
+  res_ratio: 9.99
+  bus_ratio: 9.99
+  oth_ratio: 9.99
+  tot_ratio: 9.99
